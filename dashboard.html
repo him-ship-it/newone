@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SynergySphere - Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <img src="https://i.pinimg.com/736x/ed/68/1b/ed681bbb6490ad33db9b77a3592c4b47.jpg"alt="team star logo"width="150"|>
+        <header class="main-header">
+            <h1 class="logo">TEAM STAR</h1>
+            <div class="user-profile">
+                <i class="fas fa-user-circle"></i>
+                <button id="logoutBtn" class="logout-btn">Logout</button>
+            </div>
+        </header>
+
+        <main class="dashboard-content">
+            <h2>Your Projects</h2>
+            <div id="project-list" class="project-list">
+                </div>
+        </main>
+
+        <button id="newProjectBtn" class="new-project-btn">
+            <i class="fas fa-plus"></i> New Project
+        </button>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

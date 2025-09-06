@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Task</title>
+    <link rel="stylesheet" href="create-task.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <img src="https://i.pinimg.com/736x/ed/68/1b/ed681bbb6490ad33db9b77a3592c4b47.jpg"alt="team star logo"width="100"|>
+        <h1>Create New Task</h1>
+        <form id="createTaskForm">
+            <div class="input-group">
+                <label for="taskTitle">Task Title</label>
+                <input type="text" id="taskTitle" name="taskTitle" required>
+            </div>
+            <div class="input-group">
+                <label for="taskDesc">Description</label>
+                <textarea id="taskDesc" name="taskDesc"></textarea>
+            </div>
+            <div class="input-group">
+                <label for="taskAssignee">Assignee</label>
+                <select id="taskAssignee" name="taskAssignee">
+                    <option value="">Select Assignee</option>
+                    <option value="Raj">Raj</option>
+                    <option value="Priya">Priya</option>
+                    <option value="Sameer">Sameer</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="taskDueDate">Due Date</label>
+                <input type="date" id="taskDueDate" name="taskDueDate">
+            </div>
+            <div class="button-container">
+                <button type="submit" class="save-btn">Save Task</button>
+                <button type="button" class="cancel-btn">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="create-task.js"></script>
+</body>
+</html>
